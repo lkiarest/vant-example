@@ -1,0 +1,66 @@
+.thin-line {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.thin-line-top(@color, @left: 0) {
+    position: relative;
+
+    &:before {
+        .thin-line;
+        content: '';
+        left: @left;
+        border-top: 1px solid @color;
+    }
+}
+
+.thin-line-bottom(@color, @left: 0) {
+    position: relative;
+
+    &:after {
+        .thin-line;
+        content: '';
+        left: @left;
+        border-bottom: 1px solid @color;
+    }
+}
+
+.thin-line-right(@color, @top: 0) {
+    position: relative;
+
+    &:after {
+        .thin-line;
+        content: '';
+        top: @top;
+        border-right: 1px solid @color;
+    }
+}
+
+.thin-line-left(@color, @top: 0) {
+    position: relative;
+
+    &:after {
+        .thin-line;
+        content: '';
+        top: @top;
+        border-left: 1px solid @color;
+    }
+}
+
+.multi-line(@line: 2) {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: @line;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
