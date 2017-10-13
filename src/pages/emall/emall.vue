@@ -3,7 +3,9 @@
         <div class='header'>
             我的商城
         </div>
-        <router-view></router-view>
+        <div class="main-content">
+            <router-view></router-view>
+        </div>
         <tab-footer :tabs='tabMenus' v-model='currentMenu'></tab-footer>
     </div>
 </template>
@@ -38,7 +40,9 @@
         color: #fff;
     }
 
-    .prods {
-        margin-top: 0.5rem;
+    .main-content {
+        height: calc(~"100vh - 4.75rem");
+        overflow: hidden;
+        transform: translateZ(0);
     }
 </style>

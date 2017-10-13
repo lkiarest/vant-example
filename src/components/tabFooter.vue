@@ -1,6 +1,6 @@
 <template>
     <div class='tab-footer'>
-        <div v-for='tab in tabs' class="tab" :class='{"active": value === tab}' @click='select(tab)'>
+        <div v-for='tab in tabs' :key='tab.id' class="tab" :class='{"active": value === tab}' @click='select(tab)'>
             <div class='tab_icon' :class='tab.iconCls'></div>
             <div class="tab_label">{{tab.label}}</div>
         </div>
