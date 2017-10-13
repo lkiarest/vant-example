@@ -1,8 +1,5 @@
 <template>
-    <div>
-        <div class='header'>
-            我的商城
-        </div>
+    <div class='home'>
         <van-row class='prods'>
             <van-col :span='24'>
                 <van-card
@@ -19,10 +16,7 @@
 </template>
 
 <script>
-    import VanImportor from 'components/vanImportor'
     import {Card} from 'vant'
-
-    VanImportor.importBaseComps() // 导入常用基础组件
 
     export default {
         data: () => ({
@@ -47,13 +41,6 @@
 </script>
 
 <style scoped lang="less">
-    .header {
-        text-align: center;
-        line-height: 2rem;
-        background-color: #333;
-        color: #fff;
-    }
-
     .prods {
         margin-top: 0.5rem;
     }

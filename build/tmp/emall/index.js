@@ -5,9 +5,8 @@ require('statics/style/main.less')
 
 import {load as loadConf} from 'conf/global'
 import router from 'router'
-import routes from 'src/pages/hello/routes'
-// import index from 'src/pages/hello/hello';
-
+import routes from 'src/pages/emall/routes'
+// import index from 'src/pages/emall/emall';
 
 // 启用 vue 开发者工具
 if (process.env.NODE_ENV === 'development') {
