@@ -19,23 +19,25 @@
 <script>
     import {Card} from 'vant'
 
+    const TEST_PRODS = [{
+        id: 1,
+        name: '商品1',
+        desc: '商品描述',
+        num: 2,
+        price: '2.00',
+        thumb: 'https://img.yzcdn.cn/upload_files/2017/07/02/af5b9f44deaeb68000d7e4a711160c53.jpg'
+    }, {
+        id: 2,
+        name: '商品2',
+        desc: '商品描述',
+        num: 3,
+        price: '11.00',
+        thumb: 'https://img.yzcdn.cn/upload_files/2017/07/02/af5b9f44deaeb68000d7e4a711160c53.jpg'
+    }]
+
     export default {
         data: () => ({
-            prods: [{
-                id: 1,
-                name: '商品1',
-                desc: '商品描述',
-                num: 2,
-                price: '2.00',
-                thumb: 'https://img.yzcdn.cn/upload_files/2017/07/02/af5b9f44deaeb68000d7e4a711160c53.jpg'
-            }, {
-                id: 2,
-                name: '商品2',
-                desc: '商品描述',
-                num: 3,
-                price: '11.00',
-                thumb: 'https://img.yzcdn.cn/upload_files/2017/07/02/af5b9f44deaeb68000d7e4a711160c53.jpg'
-            }]
+            prods: TEST_PRODS
         }),
         components: {
             [Card.name]: Card
