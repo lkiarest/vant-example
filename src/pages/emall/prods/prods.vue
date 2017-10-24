@@ -39,6 +39,9 @@
         data: () => ({
             prods: TEST_PRODS
         }),
+        ready () {
+            console.log('prods page')
+        },
         components: {
             [Card.name]: Card
         }

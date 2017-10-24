@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>我的反馈</h3>
+        <h3>购物车</h3>
     </div>
 </template>
 

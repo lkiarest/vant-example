@@ -19,6 +19,8 @@ module.exports = {
         services: 'src/services', // 公共服务层
         utils: 'src/utils', // 通用处理模块
         vuex: 'src/vuex', // 指向负责全局状态管理工具vuex
+        mixins: 'src/mixins', // 混合选项
+        assets: 'src/assets', // 静态文件目录
         statics: 'src/statics', // 静态文件目录
         res: 'src/statics/resources', // 静态资源
         img: 'src/statics/resources/img', // 图片

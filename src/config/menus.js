@@ -5,17 +5,17 @@ export default [{
     route: '/'
 }, {
     id: 'prods',
-    label: '商品列表',
+    label: '分类',
     iconCls: 'icon-prods',
     route: '/prods'
 }, {
+    id: 'cart',
+    label: '购物车',
+    iconCls: 'icon-cart',
+    route: '/cart'
+}, {
     id: 'my',
-    label: '我的',
+    label: '个人中心',
     iconCls: 'icon-my',
     route: '/my'
-}, {
-    id: 'feedback',
-    label: '反馈意见',
-    iconCls: 'icon-prods',
-    route: '/feedback'
 }]

@@ -59,25 +59,25 @@
 
             &.active {
                 .tab_label {
-                    color: #333;
+                    color: #D53030;
                 }
             }
 
             .tab_icon {
-                width: 1.5rem;
-                height: 1.5rem;
-                margin-top: 0.1rem;
+                width: 1.1rem;
+                height: 1.0rem;
+                margin-top: 0.2rem;
                 display: inline-block;
                 background-color: #eee;
             }
 
             .tab_label {
-                margin: 0.1rem 0;
-                overflow: hidden;
+                margin: 0.2rem 0 0.3rem;
                 white-space: nowrap;
+                overflow: hidden;
                 text-overflow: ellipsis;
+                font-size: 0.45rem;
                 color: #999;
-                font-size: 0.7rem;
             }
         }
     }

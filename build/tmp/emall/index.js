@@ -1,7 +1,7 @@
 // polyfills
 require('es6-promise').polyfill()
 require('utils/polyfills')
-require('statics/style/main.less')
+require('assets/less/main.less')
 
 import {load as loadConf} from 'conf/global'
 import router from 'router'
