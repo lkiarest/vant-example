@@ -1,6 +1,6 @@
 <template>
     <div :class='cls'>
-        <van-nav-bar :title="title" left-arrow />
+        <van-nav-bar :title="title" left-arrow @clickLeft='back'/>
         <div class="main-content">
             <router-view></router-view>
         </div>

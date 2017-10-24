@@ -5,6 +5,9 @@ export default {
         },
         toggleFooter (bShow) { // 显示、隐藏底部 tab 菜单
             this.$store.commit('SHOW_FOOTER', bShow)
+        },
+        back () { // 后退
+            this.$router.go(-1)
         }
     }
 }
